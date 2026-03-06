@@ -213,6 +213,23 @@ function get_device_lastseen() { ##############################################
 	echo -n "$LAST_SEC"
 }
 
+function get_device_lastseen_num() { ##########################################
+# receives last time when a device was seen numerically                       #
+# - get_device_lastseen $HOST $ID                                             #
+# - returns last time a device was seen as unix-timestamp                     #
+###############################################################################
+	HOST=$1
+	ID=$2
+
+	LASTSEEN=$($CURL -k -s -X GET -H "X-API-Key: ${SYNCTHING_API[$HOST]}" https://"${SYNCTHING_IP[$HOST]}":"${SYNCTHING_PORT[$HOST]}"/rest/stats/device | $JQ ".\"$ID\".lastSeen" | sed -es/"^\"\([^\"]*\)\"$"/"\1"/)
+
+	LAST_SEC_NUM=$($DATE -d "$LASTSEEN" +"%s")
+        CURRENT_SEC=$($DATE +"%s")
+        LAST_SEEN_NUM=$((CURRENT_SEC - LAST_SEC_NUM))
+
+	echo -n "$LAST_SEEN_NUM"
+}
+
 ## Adding static syncthing-hosts ##############################################
 ###############################################################################
 
@@ -256,6 +273,9 @@ for PARAM in "$@" ; do
 		"--last-seen")
 			SYNCTHING_ACTION="lastseen"
 			;;
+		"--last-seen-num")
+			SYNCTHING_ACTION="lastseennum"
+			;;
 		"--last-sync")
 			SYNCTHING_ACTION="lastsync"
 			;;
@@ -293,6 +313,7 @@ for PARAM in "$@" ; do
 			echo ""
 			echo "Actions:"
 			echo "--last-seen      - timestamp, when device owning given folder was last time seen"
+			echo "--last-seen-num  - number of seconds, when device owning given folder was last time seen"
 			echo "--last-sync      - timestamp, when last file of given folder was synced"
 			echo "--last-file      - name of the last file that has been synced"
 			echo "--last-scan      - timestamp, when folder was scanned last time"
@@ -335,6 +356,13 @@ case "$SYNCTHING_ACTION" in
 
 		for DEV in $DEVS ; do
 			RETURN=$(get_device_lastseen "$SYNCTHING_HOST" "$DEV")
+		done
+		;;
+	"lastseennum")
+		DEVS=$(get_folder_device_ids "$SYNCTHING_HOST" "$SYNCTHING_FOLDER")
+
+		for DEV in $DEVS ; do
+			RETURN=$(get_device_lastseen_num "$SYNCTHING_HOST" "$DEV")
 		done
 		;;
 	"lastsync")

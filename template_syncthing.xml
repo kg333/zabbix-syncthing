@@ -1,624 +1,254 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <zabbix_export>
-    <version>3.0</version>
-    <date>2019-01-01T22:38:03Z</date>
+    <version>6.0</version>
+    <date>2026-03-06T05:15:10Z</date>
     <groups>
         <group>
+            <uuid>7df96b18c230490a9a0a9e2307226338</uuid>
             <name>Templates</name>
         </group>
     </groups>
     <templates>
         <template>
+            <uuid>3b9fe04d5d744818ae2466aa231e7ef5</uuid>
             <template>Template Syncthing Folder</template>
             <name>Template Syncthing Folder</name>
-            <description/>
             <groups>
                 <group>
                     <name>Templates</name>
                 </group>
             </groups>
-            <applications>
-                <application>
-                    <name>folder-stats</name>
-                </application>
-                <application>
-                    <name>general</name>
-                </application>
-            </applications>
             <items>
                 <item>
+                    <uuid>4babf162784c4a3498c4f9c15ed60196</uuid>
                     <name>globalBytes</name>
-                    <type>2</type>
-                    <snmp_community/>
-                    <multiplier>0</multiplier>
-                    <snmp_oid/>
+                    <type>TRAP</type>
                     <key>globalBytes</key>
                     <delay>0</delay>
-                    <history>90</history>
-                    <trends>365</trends>
-                    <status>0</status>
-                    <value_type>3</value_type>
-                    <allowed_hosts/>
                     <units>b</units>
-                    <delta>0</delta>
-                    <snmpv3_contextname/>
-                    <snmpv3_securityname/>
-                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
-                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
-                    <snmpv3_authpassphrase/>
-                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
-                    <snmpv3_privpassphrase/>
-                    <formula>1</formula>
-                    <delay_flex/>
-                    <params/>
-                    <ipmi_sensor/>
-                    <data_type>0</data_type>
-                    <authtype>0</authtype>
-                    <username/>
-                    <password/>
-                    <publickey/>
-                    <privatekey/>
-                    <port/>
-                    <description/>
-                    <inventory_link>0</inventory_link>
-                    <applications>
-                        <application>
-                            <name>folder-stats</name>
-                        </application>
-                    </applications>
-                    <valuemap/>
-                    <logtimefmt/>
+                    <tags>
+                        <tag>
+                            <tag>Application</tag>
+                            <value>folder-stats</value>
+                        </tag>
+                    </tags>
                 </item>
                 <item>
+                    <uuid>e2e9fee4300d40948199f0131d963e1b</uuid>
                     <name>globalFiles</name>
-                    <type>2</type>
-                    <snmp_community/>
-                    <multiplier>0</multiplier>
-                    <snmp_oid/>
+                    <type>TRAP</type>
                     <key>globalFiles</key>
                     <delay>0</delay>
-                    <history>90</history>
-                    <trends>365</trends>
-                    <status>0</status>
-                    <value_type>3</value_type>
-                    <allowed_hosts/>
-                    <units/>
-                    <delta>0</delta>
-                    <snmpv3_contextname/>
-                    <snmpv3_securityname/>
-                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
-                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
-                    <snmpv3_authpassphrase/>
-                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
-                    <snmpv3_privpassphrase/>
-                    <formula>1</formula>
-                    <delay_flex/>
-                    <params/>
-                    <ipmi_sensor/>
-                    <data_type>0</data_type>
-                    <authtype>0</authtype>
-                    <username/>
-                    <password/>
-                    <publickey/>
-                    <privatekey/>
-                    <port/>
-                    <description/>
-                    <inventory_link>0</inventory_link>
-                    <applications>
-                        <application>
-                            <name>folder-stats</name>
-                        </application>
-                    </applications>
-                    <valuemap/>
-                    <logtimefmt/>
+                    <tags>
+                        <tag>
+                            <tag>Application</tag>
+                            <value>folder-stats</value>
+                        </tag>
+                    </tags>
                 </item>
                 <item>
+                    <uuid>35c8607f4944400d94bd539308425fe3</uuid>
                     <name>inSyncBytes</name>
-                    <type>2</type>
-                    <snmp_community/>
-                    <multiplier>0</multiplier>
-                    <snmp_oid/>
+                    <type>TRAP</type>
                     <key>inSyncBytes</key>
                     <delay>0</delay>
-                    <history>90</history>
-                    <trends>365</trends>
-                    <status>0</status>
-                    <value_type>3</value_type>
-                    <allowed_hosts/>
                     <units>b</units>
-                    <delta>0</delta>
-                    <snmpv3_contextname/>
-                    <snmpv3_securityname/>
-                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
-                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
-                    <snmpv3_authpassphrase/>
-                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
-                    <snmpv3_privpassphrase/>
-                    <formula>1</formula>
-                    <delay_flex/>
-                    <params/>
-                    <ipmi_sensor/>
-                    <data_type>0</data_type>
-                    <authtype>0</authtype>
-                    <username/>
-                    <password/>
-                    <publickey/>
-                    <privatekey/>
-                    <port/>
-                    <description/>
-                    <inventory_link>0</inventory_link>
-                    <applications>
-                        <application>
-                            <name>folder-stats</name>
-                        </application>
-                    </applications>
-                    <valuemap/>
-                    <logtimefmt/>
+                    <tags>
+                        <tag>
+                            <tag>Application</tag>
+                            <value>folder-stats</value>
+                        </tag>
+                    </tags>
                 </item>
                 <item>
+                    <uuid>5e8bbcb076c04bff9d606b60e2ac3caa</uuid>
                     <name>inSyncFiles</name>
-                    <type>2</type>
-                    <snmp_community/>
-                    <multiplier>0</multiplier>
-                    <snmp_oid/>
+                    <type>TRAP</type>
                     <key>inSyncFiles</key>
                     <delay>0</delay>
-                    <history>90</history>
-                    <trends>365</trends>
-                    <status>0</status>
-                    <value_type>3</value_type>
-                    <allowed_hosts/>
-                    <units/>
-                    <delta>0</delta>
-                    <snmpv3_contextname/>
-                    <snmpv3_securityname/>
-                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
-                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
-                    <snmpv3_authpassphrase/>
-                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
-                    <snmpv3_privpassphrase/>
-                    <formula>1</formula>
-                    <delay_flex/>
-                    <params/>
-                    <ipmi_sensor/>
-                    <data_type>0</data_type>
-                    <authtype>0</authtype>
-                    <username/>
-                    <password/>
-                    <publickey/>
-                    <privatekey/>
-                    <port/>
-                    <description/>
-                    <inventory_link>0</inventory_link>
-                    <applications>
-                        <application>
-                            <name>folder-stats</name>
-                        </application>
-                    </applications>
-                    <valuemap/>
-                    <logtimefmt/>
+                    <tags>
+                        <tag>
+                            <tag>Application</tag>
+                            <value>folder-stats</value>
+                        </tag>
+                    </tags>
                 </item>
                 <item>
+                    <uuid>cd0939a47f1049a79d1052689ba3c35c</uuid>
                     <name>needBytes</name>
-                    <type>2</type>
-                    <snmp_community/>
-                    <multiplier>0</multiplier>
-                    <snmp_oid/>
+                    <type>TRAP</type>
                     <key>needBytes</key>
                     <delay>0</delay>
-                    <history>90</history>
-                    <trends>365</trends>
-                    <status>0</status>
-                    <value_type>3</value_type>
-                    <allowed_hosts/>
                     <units>b</units>
-                    <delta>0</delta>
-                    <snmpv3_contextname/>
-                    <snmpv3_securityname/>
-                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
-                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
-                    <snmpv3_authpassphrase/>
-                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
-                    <snmpv3_privpassphrase/>
-                    <formula>1</formula>
-                    <delay_flex/>
-                    <params/>
-                    <ipmi_sensor/>
-                    <data_type>0</data_type>
-                    <authtype>0</authtype>
-                    <username/>
-                    <password/>
-                    <publickey/>
-                    <privatekey/>
-                    <port/>
-                    <description/>
-                    <inventory_link>0</inventory_link>
-                    <applications>
-                        <application>
-                            <name>folder-stats</name>
-                        </application>
-                    </applications>
-                    <valuemap/>
-                    <logtimefmt/>
+                    <tags>
+                        <tag>
+                            <tag>Application</tag>
+                            <value>folder-stats</value>
+                        </tag>
+                    </tags>
                 </item>
                 <item>
+                    <uuid>12bf3ff9b70a4c4491d0bcc6ec1e0e02</uuid>
                     <name>needFiles</name>
-                    <type>2</type>
-                    <snmp_community/>
-                    <multiplier>0</multiplier>
-                    <snmp_oid/>
+                    <type>TRAP</type>
                     <key>needFiles</key>
                     <delay>0</delay>
-                    <history>90</history>
-                    <trends>365</trends>
-                    <status>0</status>
-                    <value_type>3</value_type>
-                    <allowed_hosts/>
-                    <units/>
-                    <delta>0</delta>
-                    <snmpv3_contextname/>
-                    <snmpv3_securityname/>
-                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
-                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
-                    <snmpv3_authpassphrase/>
-                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
-                    <snmpv3_privpassphrase/>
-                    <formula>1</formula>
-                    <delay_flex/>
-                    <params/>
-                    <ipmi_sensor/>
-                    <data_type>0</data_type>
-                    <authtype>0</authtype>
-                    <username/>
-                    <password/>
-                    <publickey/>
-                    <privatekey/>
-                    <port/>
-                    <description/>
-                    <inventory_link>0</inventory_link>
-                    <applications>
-                        <application>
-                            <name>folder-stats</name>
-                        </application>
-                    </applications>
-                    <valuemap/>
-                    <logtimefmt/>
+                    <tags>
+                        <tag>
+                            <tag>Application</tag>
+                            <value>folder-stats</value>
+                        </tag>
+                    </tags>
                 </item>
                 <item>
+                    <uuid>1b36cf363172481aa04f22cc994937a5</uuid>
                     <name>pullErrors</name>
-                    <type>2</type>
-                    <snmp_community/>
-                    <multiplier>0</multiplier>
-                    <snmp_oid/>
+                    <type>TRAP</type>
                     <key>pullErrors</key>
                     <delay>0</delay>
-                    <history>90</history>
-                    <trends>365</trends>
-                    <status>0</status>
-                    <value_type>3</value_type>
-                    <allowed_hosts/>
-                    <units/>
-                    <delta>0</delta>
-                    <snmpv3_contextname/>
-                    <snmpv3_securityname/>
-                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
-                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
-                    <snmpv3_authpassphrase/>
-                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
-                    <snmpv3_privpassphrase/>
-                    <formula>1</formula>
-                    <delay_flex/>
-                    <params/>
-                    <ipmi_sensor/>
-                    <data_type>0</data_type>
-                    <authtype>0</authtype>
-                    <username/>
-                    <password/>
-                    <publickey/>
-                    <privatekey/>
-                    <port/>
-                    <description/>
-                    <inventory_link>0</inventory_link>
-                    <applications>
-                        <application>
-                            <name>folder-stats</name>
-                        </application>
-                    </applications>
-                    <valuemap/>
-                    <logtimefmt/>
+                    <tags>
+                        <tag>
+                            <tag>Application</tag>
+                            <value>folder-stats</value>
+                        </tag>
+                    </tags>
                 </item>
                 <item>
+                    <uuid>fb9ea6879ade452889d81656e21ede11</uuid>
                     <name>state</name>
-                    <type>2</type>
-                    <snmp_community/>
-                    <multiplier>0</multiplier>
-                    <snmp_oid/>
+                    <type>TRAP</type>
                     <key>state</key>
                     <delay>0</delay>
-                    <history>90</history>
                     <trends>0</trends>
-                    <status>0</status>
-                    <value_type>4</value_type>
-                    <allowed_hosts/>
-                    <units/>
-                    <delta>0</delta>
-                    <snmpv3_contextname/>
-                    <snmpv3_securityname/>
-                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
-                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
-                    <snmpv3_authpassphrase/>
-                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
-                    <snmpv3_privpassphrase/>
-                    <formula>1</formula>
-                    <delay_flex/>
-                    <params/>
-                    <ipmi_sensor/>
-                    <data_type>0</data_type>
-                    <authtype>0</authtype>
-                    <username/>
-                    <password/>
-                    <publickey/>
-                    <privatekey/>
-                    <port/>
-                    <description/>
-                    <inventory_link>0</inventory_link>
-                    <applications>
-                        <application>
-                            <name>folder-stats</name>
-                        </application>
-                    </applications>
-                    <valuemap/>
-                    <logtimefmt/>
+                    <value_type>TEXT</value_type>
+                    <tags>
+                        <tag>
+                            <tag>Application</tag>
+                            <value>folder-stats</value>
+                        </tag>
+                    </tags>
                 </item>
                 <item>
+                    <uuid>fe74e7c4470e458b851ca9402d7b9cf2</uuid>
                     <name>last-synced-file</name>
-                    <type>10</type>
-                    <snmp_community/>
-                    <multiplier>0</multiplier>
-                    <snmp_oid/>
+                    <type>EXTERNAL</type>
                     <key>syncthing.sh[&quot;--folder={$SYNCTHING_FOLDER}&quot;,&quot;--last-file&quot;,&quot;--ip={$SYNCTHING_IP}&quot;,&quot;--port={$SYNCTHING_PORT}&quot;,&quot;--apikey={$SYNCTHING_APIKEY}&quot;]</key>
                     <delay>300</delay>
-                    <history>90</history>
                     <trends>0</trends>
-                    <status>0</status>
-                    <value_type>4</value_type>
-                    <allowed_hosts/>
-                    <units/>
-                    <delta>0</delta>
-                    <snmpv3_contextname/>
-                    <snmpv3_securityname/>
-                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
-                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
-                    <snmpv3_authpassphrase/>
-                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
-                    <snmpv3_privpassphrase/>
-                    <formula>1</formula>
-                    <delay_flex/>
-                    <params/>
-                    <ipmi_sensor/>
-                    <data_type>0</data_type>
-                    <authtype>0</authtype>
-                    <username/>
-                    <password/>
-                    <publickey/>
-                    <privatekey/>
-                    <port/>
-                    <description/>
-                    <inventory_link>0</inventory_link>
-                    <applications>
-                        <application>
-                            <name>general</name>
-                        </application>
-                    </applications>
-                    <valuemap/>
-                    <logtimefmt/>
+                    <value_type>TEXT</value_type>
+                    <tags>
+                        <tag>
+                            <tag>Application</tag>
+                            <value>general</value>
+                        </tag>
+                    </tags>
                 </item>
                 <item>
+                    <uuid>5606d8dd328b469eb3f084c155ed5a97</uuid>
                     <name>last-folder-scan-time</name>
-                    <type>10</type>
-                    <snmp_community/>
-                    <multiplier>0</multiplier>
-                    <snmp_oid/>
+                    <type>EXTERNAL</type>
                     <key>syncthing.sh[&quot;--folder={$SYNCTHING_FOLDER}&quot;,&quot;--last-scan&quot;,&quot;--ip={$SYNCTHING_IP}&quot;,&quot;--port={$SYNCTHING_PORT}&quot;,&quot;--apikey={$SYNCTHING_APIKEY}&quot;]</key>
                     <delay>300</delay>
-                    <history>90</history>
                     <trends>0</trends>
-                    <status>0</status>
-                    <value_type>4</value_type>
-                    <allowed_hosts/>
-                    <units/>
-                    <delta>0</delta>
-                    <snmpv3_contextname/>
-                    <snmpv3_securityname/>
-                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
-                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
-                    <snmpv3_authpassphrase/>
-                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
-                    <snmpv3_privpassphrase/>
-                    <formula>1</formula>
-                    <delay_flex/>
-                    <params/>
-                    <ipmi_sensor/>
-                    <data_type>0</data_type>
-                    <authtype>0</authtype>
-                    <username/>
-                    <password/>
-                    <publickey/>
-                    <privatekey/>
-                    <port/>
-                    <description/>
-                    <inventory_link>0</inventory_link>
-                    <applications>
-                        <application>
-                            <name>general</name>
-                        </application>
-                    </applications>
-                    <valuemap/>
-                    <logtimefmt/>
+                    <value_type>TEXT</value_type>
+                    <tags>
+                        <tag>
+                            <tag>Application</tag>
+                            <value>general</value>
+                        </tag>
+                    </tags>
                 </item>
                 <item>
+                    <uuid>d588f0b0899e43e68bafbee3531f7eb0</uuid>
                     <name>device-last-seen</name>
-                    <type>10</type>
-                    <snmp_community/>
-                    <multiplier>0</multiplier>
-                    <snmp_oid/>
+                    <type>EXTERNAL</type>
                     <key>syncthing.sh[&quot;--folder={$SYNCTHING_FOLDER}&quot;,&quot;--last-seen&quot;,&quot;--ip={$SYNCTHING_IP}&quot;,&quot;--port={$SYNCTHING_PORT}&quot;,&quot;--apikey={$SYNCTHING_APIKEY}&quot;]</key>
                     <delay>300</delay>
-                    <history>90</history>
                     <trends>0</trends>
-                    <status>0</status>
-                    <value_type>4</value_type>
-                    <allowed_hosts/>
-                    <units/>
-                    <delta>0</delta>
-                    <snmpv3_contextname/>
-                    <snmpv3_securityname/>
-                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
-                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
-                    <snmpv3_authpassphrase/>
-                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
-                    <snmpv3_privpassphrase/>
-                    <formula>1</formula>
-                    <delay_flex/>
-                    <params/>
-                    <ipmi_sensor/>
-                    <data_type>0</data_type>
-                    <authtype>0</authtype>
-                    <username/>
-                    <password/>
-                    <publickey/>
-                    <privatekey/>
-                    <port/>
-                    <description/>
-                    <inventory_link>0</inventory_link>
-                    <applications>
-                        <application>
-                            <name>general</name>
-                        </application>
-                    </applications>
-                    <valuemap/>
-                    <logtimefmt/>
+                    <value_type>TEXT</value_type>
+                    <tags>
+                        <tag>
+                            <tag>Application</tag>
+                            <value>general</value>
+                        </tag>
+                    </tags>
                 </item>
                 <item>
+                    <uuid>d8a52fa50d064c699c2143051c3eb59a</uuid>
+                    <name>device-last-seen-num</name>
+                    <type>EXTERNAL</type>
+                    <key>syncthing.sh[&quot;--folder={$SYNCTHING_FOLDER}&quot;,&quot;--last-seen-num&quot;,&quot;--ip={$SYNCTHING_IP}&quot;,&quot;--port={$SYNCTHING_PORT}&quot;,&quot;--apikey={$SYNCTHING_APIKEY}&quot;]</key>
+                    <delay>300</delay>
+                    <tags>
+                        <tag>
+                            <tag>Application</tag>
+                            <value>general</value>
+                        </tag>
+                    </tags>
+                    <triggers>
+                        <trigger>
+                            <uuid>10ae4593e6fd4ab5961a45e3a6fe11e0</uuid>
+                            <expression>last(/Template Syncthing Folder/syncthing.sh[&quot;--folder={$SYNCTHING_FOLDER}&quot;,&quot;--last-seen-num&quot;,&quot;--ip={$SYNCTHING_IP}&quot;,&quot;--port={$SYNCTHING_PORT}&quot;,&quot;--apikey={$SYNCTHING_APIKEY}&quot;],#1)&gt;28800</expression>
+                            <name>{$SYNCTHING_FOLDER} owner not seen for 8 hours</name>
+                            <priority>HIGH</priority>
+                        </trigger>
+                    </triggers>
+                </item>
+                <item>
+                    <uuid>aa77dac882e141b29235f32c61185a1c</uuid>
                     <name>last-sync-time</name>
-                    <type>10</type>
-                    <snmp_community/>
-                    <multiplier>0</multiplier>
-                    <snmp_oid/>
+                    <type>EXTERNAL</type>
                     <key>syncthing.sh[&quot;--folder={$SYNCTHING_FOLDER}&quot;,&quot;--last-sync&quot;,&quot;--ip={$SYNCTHING_IP}&quot;,&quot;--port={$SYNCTHING_PORT}&quot;,&quot;--apikey={$SYNCTHING_APIKEY}&quot;]</key>
                     <delay>300</delay>
-                    <history>90</history>
                     <trends>0</trends>
-                    <status>0</status>
-                    <value_type>4</value_type>
-                    <allowed_hosts/>
-                    <units/>
-                    <delta>0</delta>
-                    <snmpv3_contextname/>
-                    <snmpv3_securityname/>
-                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
-                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
-                    <snmpv3_authpassphrase/>
-                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
-                    <snmpv3_privpassphrase/>
-                    <formula>1</formula>
-                    <delay_flex/>
-                    <params/>
-                    <ipmi_sensor/>
-                    <data_type>0</data_type>
-                    <authtype>0</authtype>
-                    <username/>
-                    <password/>
-                    <publickey/>
-                    <privatekey/>
-                    <port/>
-                    <description/>
-                    <inventory_link>0</inventory_link>
-                    <applications>
-                        <application>
-                            <name>general</name>
-                        </application>
-                    </applications>
-                    <valuemap/>
-                    <logtimefmt/>
+                    <value_type>TEXT</value_type>
+                    <tags>
+                        <tag>
+                            <tag>Application</tag>
+                            <value>general</value>
+                        </tag>
+                    </tags>
                 </item>
                 <item>
+                    <uuid>d3f9f185f41442448e6972aa4faa0708</uuid>
                     <name>errors</name>
-                    <type>10</type>
-                    <snmp_community/>
-                    <multiplier>0</multiplier>
-                    <snmp_oid/>
+                    <type>EXTERNAL</type>
                     <key>syncthing.sh[&quot;--folder={$SYNCTHING_FOLDER}&quot;,&quot;--status=globalBytes,globalFiles,inSyncBytes,inSyncFiles,needBytes,needFiles,pullErrors,state&quot;,&quot;--zabbix-host={HOST.HOST}&quot;,&quot;--ip={$SYNCTHING_IP}&quot;,&quot;--port={$SYNCTHING_PORT}&quot;,&quot;--apikey={$SYNCTHING_APIKEY}&quot;]</key>
                     <delay>300</delay>
-                    <history>90</history>
-                    <trends>365</trends>
-                    <status>0</status>
-                    <value_type>3</value_type>
-                    <allowed_hosts/>
-                    <units/>
-                    <delta>0</delta>
-                    <snmpv3_contextname/>
-                    <snmpv3_securityname/>
-                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
-                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
-                    <snmpv3_authpassphrase/>
-                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
-                    <snmpv3_privpassphrase/>
-                    <formula>1</formula>
-                    <delay_flex/>
-                    <params/>
-                    <ipmi_sensor/>
-                    <data_type>0</data_type>
-                    <authtype>0</authtype>
-                    <username/>
-                    <password/>
-                    <publickey/>
-                    <privatekey/>
-                    <port/>
-                    <description/>
-                    <inventory_link>0</inventory_link>
-                    <applications>
-                        <application>
-                            <name>folder-stats</name>
-                        </application>
-                    </applications>
-                    <valuemap/>
-                    <logtimefmt/>
+                    <tags>
+                        <tag>
+                            <tag>Application</tag>
+                            <value>folder-stats</value>
+                        </tag>
+                    </tags>
+                    <triggers>
+                        <trigger>
+                            <uuid>2e11fd408dc0467a9f6a7a9468f52428</uuid>
+                            <expression>last(/Template Syncthing Folder/syncthing.sh[&quot;--folder={$SYNCTHING_FOLDER}&quot;,&quot;--status=globalBytes,globalFiles,inSyncBytes,inSyncFiles,needBytes,needFiles,pullErrors,state&quot;,&quot;--zabbix-host={HOST.HOST}&quot;,&quot;--ip={$SYNCTHING_IP}&quot;,&quot;--port={$SYNCTHING_PORT}&quot;,&quot;--apikey={$SYNCTHING_APIKEY}&quot;],#3)&lt;&gt;0</expression>
+                            <name>sync error &lt;&gt; 0 for the 3rd time in a row</name>
+                            <priority>AVERAGE</priority>
+                        </trigger>
+                    </triggers>
                 </item>
             </items>
-            <discovery_rules/>
             <macros>
                 <macro>
                     <macro>{$SYNCTHING_APIKEY}</macro>
                     <value>Enter APIkey here</value>
                 </macro>
                 <macro>
-                    <macro>{$SYNCTHING_IP}</macro>
-                    <value>Enter IP here</value>
-                </macro>
-                <macro>
                     <macro>{$SYNCTHING_FOLDER}</macro>
                     <value>Enter folder name here</value>
+                </macro>
+                <macro>
+                    <macro>{$SYNCTHING_IP}</macro>
+                    <value>Enter IP here</value>
                 </macro>
                 <macro>
                     <macro>{$SYNCTHING_PORT}</macro>
                     <value>8384</value>
                 </macro>
             </macros>
-            <templates/>
-            <screens/>
         </template>
     </templates>
-    <triggers>
-        <trigger>
-            <expression>{Template Syncthing Folder:syncthing.sh[&quot;--folder={$SYNCTHING_FOLDER}&quot;,&quot;--status=globalBytes,globalFiles,inSyncBytes,inSyncFiles,needBytes,needFiles,pullErrors,state&quot;,&quot;--zabbix-host={HOST.HOST}&quot;,&quot;--ip={$SYNCTHING_IP}&quot;,&quot;--port={$SYNCTHING_PORT}&quot;,&quot;--apikey={$SYNCTHING_APIKEY}&quot;].last(#3)}&lt;&gt;0</expression>
-            <name>sync error &lt;&gt; 0 for the 3rd time in a row</name>
-            <url/>
-            <status>0</status>
-            <priority>3</priority>
-            <description/>
-            <type>0</type>
-            <dependencies/>
-        </trigger>
-    </triggers>
 </zabbix_export>
